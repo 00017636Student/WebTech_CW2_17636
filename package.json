@@ -1,0 +1,27 @@
+{
+  "name": "17636",
+  "version": "1.0.0",
+  "description": "This is the project for my cw2 Web technology module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00017636Student/WebTech_CW2_17636.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00017636Student/WebTech_CW2_17636/issues"
+  },
+  "homepage": "https://github.com/00017636Student/WebTech_CW2_17636#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "nodemon": "^3.1.9",
+    "pug": "^3.0.3"
+  }
+}
