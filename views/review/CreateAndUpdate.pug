@@ -18,37 +18,41 @@ body
         h1.formTitle= formTitle
 
         if errors && errors.length
-            .error-message
-                ul.error-list
-                    each err in errors
-                        li= err.msg
+            .errorMessage
+                ul.errorList
+                    each error in errors
+                        li= error.msg
 
         form.review-form(method="post", action=formAction)
             if review && review.id
                 input(type="hidden", name="id", value=review.id)
 
-            .form-group
+            .form-group#title
                 label(for="title") Title
                 input(type="text", name="title", id="title", value=sTitle, placeholder="Enter review's title")
 
-            .form-group
+            .form-group#author
                 label(for="author") Author
                 input(type="text", name="author", id="author", value=sAuthor, placeholder="Enter author")
 
-            .form-group
+            .form-group#genre
                 label(for="genre") Genre
                     select(name="genre" id="genre")
-                        option(value="fiction" selected=(sGenre === 'fiction')) Fiction
-                        option(value="nonfiction" selected=(sGenre === 'nonfiction')) Non-Fiction
+                        option(value="detective" selected=(sGenre === 'detective')) Detective
+                        option(value="history" selected=(sGenre === 'history')) History
                         option(value="sci-fi" selected=(sGenre === 'sci-fi')) Science Fiction
+                        option(value="adventure" selected=(sGenre === 'adventure')) Adventure 
                         option(value="romance" selected=(sGenre === 'romance')) Romance
-            .form-group
-                label(for="rating") How would you rate this review?
+                        option(value="fantasy" selected=(sGenre === 'fantasy')) Fantasy
+                        option(value="horror" selected=(sGenre === 'horror')) Horror
+                        option(value="romance" selected=(sGenre === 'romance')) Romance
+            .form-group#rating
+                label(for="rating") How would you rate this book?
                 input(type="number", name="rating", id="rating", value=sRating, min="1" max="5" step="1")
 
-            .form-group
-                label(for="fullReview") Write is your opinion about this review
-                input(type="text", name="fullReview", id="fullReview", value=sFullReview, placeholder="Write your opinion")
+            .form-group#bookOpinion
+                label(for="fullReview") What is your opinion about this book
+                textarea(name="fullReview", id="fullReview", value=sFullReview)
             button.BtnSubmit(type="submit") Submit
 
 
