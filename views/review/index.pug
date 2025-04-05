@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title #{title}
+  link(rel='stylesheet' href='/css/styles.css')
+  script(type='text/javascript' src='/js/scripts.js')
+
+body
+  .container
+    h1 Reviews List
+    a(href="/review/create") Create New Review
+    table
+      thead
+        tr
+          th ID
+          th Title
+          th Author
+          th Genre
+          th Rating 
+          th Full Review
+          th Actions
+      tbody
+        each review in reviews
+          tr
+            td= review.id
+            td= review.review.title
+            td= review.review.author
+            td= review.review.genre
+            td= review.review.rating
+            td= review.review.fullReview
+            td
+              a(href=`/review/update/${review.id}`) Update
+              span &nbsp;
+              a(href=`/api/review/delete/${review.id}`) Delete
+
+
+
