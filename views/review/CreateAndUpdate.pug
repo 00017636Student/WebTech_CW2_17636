@@ -7,13 +7,13 @@ head
   script(type='text/javascript' src='/js/scripts.js')
 body
     .container
-        - var formAction = book && book.id ? `/api/book/update/${book.id}` : '/api/book/create'
-        - var formTitle = book && book.id ? 'Update book' : 'Create book'
-        - var sTitle = book ? (book.book ? book.book.title : book.title) : ''
-        - var sAuthor = book ? (book.book ? book.book.author : book.author) : ''
-        - var sGenre = book ? (book.book ? book.book.genre : book.genre) : ''
-        - var sRating = book ? (book.book ? book.book.rating : book.rating) : ''
-        - var sFullReview = book ? (book.book ? book.book.fullReview : book.fullReview) : ''
+        - var formAction = review && review.id ? `/api/review/update/${review.id}` : '/api/review/create'
+        - var formTitle = review && review.id ? 'Update review' : 'Create review'
+        - var sTitle = review ? (review.review ? review.review.title : review.title) : ''
+        - var sAuthor = review ? (review.review ? review.review.author : review.author) : ''
+        - var sGenre = review ? (review.review ? review.review.genre : review.genre) : ''
+        - var sRating = review ? (review.review ? review.review.rating : review.rating) : ''
+        - var sFullReview = review ? (review.review ? review.review.fullReview : review.fullReview) : ''
 
         h1.formTitle= formTitle
 
@@ -23,13 +23,13 @@ body
                     each err in errors
                         li= err.msg
 
-        form.book-form(method="post", action=formAction)
-            if book && book.id
-                input(type="hidden", name="id", value=book.id)
+        form.review-form(method="post", action=formAction)
+            if review && review.id
+                input(type="hidden", name="id", value=review.id)
 
             .form-group
                 label(for="title") Title
-                input(type="text", name="title", id="title", value=sTitle, placeholder="Enter book's title")
+                input(type="text", name="title", id="title", value=sTitle, placeholder="Enter review's title")
 
             .form-group
                 label(for="author") Author
@@ -43,11 +43,11 @@ body
                         option(value="sci-fi" selected=(sGenre === 'sci-fi')) Science Fiction
                         option(value="romance" selected=(sGenre === 'romance')) Romance
             .form-group
-                label(for="rating") How would you rate this book?
+                label(for="rating") How would you rate this review?
                 input(type="number", name="rating", id="rating", value=sRating, min="1" max="5" step="1")
 
             .form-group
-                label(for="fullReview") Write is your opinion about this book
+                label(for="fullReview") Write is your opinion about this review
                 input(type="text", name="fullReview", id="fullReview", value=sFullReview, placeholder="Write your opinion")
             button.BtnSubmit(type="submit") Submit
 

@@ -6,7 +6,6 @@ if (!global.reviews_db) {
 global.reviews_db = path.join(__dirname, '../data', 'reviews_db.json');
 
 }
-review
 
 const reviews = require(global.reviews_db);
 

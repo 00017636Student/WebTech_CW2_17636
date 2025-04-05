@@ -14,7 +14,7 @@ const port = 3000
 const app = express();
 
 
-global.mock_db = path.join(__dirname, './data/books_db.json');
+global.mock_db = path.join(__dirname, './data/reviews_db.json');
 
 
 
