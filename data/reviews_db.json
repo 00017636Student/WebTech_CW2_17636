@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "id": "hKTj",
+        "review": {
+            "title": "vyvuu",
+            "author": "Пушкин",
+            "genre": "romance",
+            "rating": "3",
+            "fullReview": "Hello."
+        }
+    }
+]
