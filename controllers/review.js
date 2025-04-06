@@ -14,7 +14,7 @@ res.status(500).json({ error: error.message });
 getAll: (req, res) => {
 try {
 const reviews = reviewService.get(req, res);
-res.render('review/index', { reviews })
+res.render('review/all', { reviews })
 } catch (error) {
 res.status(500).json({ error: error.message });
 }},
