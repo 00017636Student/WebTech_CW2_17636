@@ -17,33 +17,30 @@ body
               a(href="/review") All reviews 
           li
               a(href="/review/create") Add review
-
-  .container
+  .center
     h1 Reviews List
     a(href="/review/create") Create New Review
-    table
-      thead
-        tr
-          th ID
-          th Title
-          th Author
-          th Genre
-          th Rating 
-          th Full Review
-          th Actions
-      tbody
-        each review in reviews
-          tr
-            td= review.id
-            td= review.review.title
-            td= review.review.author
-            td= review.review.genre
-            td= review.review.rating
-            td= review.review.fullReview
-            td
-              a(href=`/review/update/${review.id}`) Update
-              span &nbsp;
-              a.BtnDelete(href=`/api/review/delete/${review.id}`) Delete
+
+  .reviewsList
+    each review in reviews
+      .card
+        h2= review.review.title
+        p
+          strong Author: 
+          | #{review.review.author}
+        p
+          strong Genre: 
+          | #{review.review.genre}
+        p
+          strong Rating: 
+          | #{review.review.rating}
+        p.fullReview
+          strong Full Review: 
+          | #{review.review.fullReview}
+        .actions
+          a.BtnUpdate(href=`/review/update/${review.id}`) Update
+          span &nbsp;
+          a.BtnDelete(href=`/api/review/delete/${review.id}`) Delete
 
 
 

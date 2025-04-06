@@ -34,7 +34,7 @@ body
                     each error in errors
                         li= error.msg
 
-        form.review-form(method="post", action=formAction)
+        form.Form(method="post", action=formAction)
             if review && review.id
                 input(type="hidden", name="id", value=review.id)
 

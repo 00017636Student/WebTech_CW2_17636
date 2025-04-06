@@ -1,31 +1,117 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
-    padding: 0;
-    margin: 0;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 0;
+  margin: 0;
+}
   
+
+/*Css for all reviews page */
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  padding: 20px;
+  align-items: center;
+}
+
+.center a {
+  text-decoration: none;
+  color: #fff; 
+  background-color: #9e25fb; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  display: inline-block; 
+  font-size: 14px;
+  text-align: center; 
+  width: 200px; 
+}
+
+.center a:hover {
+  background-color: #7e0078;
+}
+
+.reviewsList {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+  
+.card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height:auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card .full-review {
+  max-height: 150px;
+  overflow-y: auto;
+}
+  
+.card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+  
+.actions {
+  margin-top: 1rem;
+}
+  
+.BtnDelete {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #fb2525; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  display: inline-block; 
+  font-size: 14px;
+  text-align: center; 
+  width: 50px; 
+}
+
+.BtnDelete:hover{
+  background-color: #6f6f6f;
+  color: #ffffff;
+}
+
+.BtnUpdate {
+  color: rgb(34, 0, 0);
+  text-decoration: none;
+  background-color: #ff79bc; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  display: inline-block; 
+  font-size: 14px;
+  text-align: center; 
+  width: 50px; 
+}
+
+.BtnUpdate:hover{
+  background-color: #9c1156;
+  color: #ddd;
+}
+  
+  /* CSS for Create and Update */
+
   .container {
     max-width: 800px;
-    margin: 30px auto;
+    margin: 70px auto;
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  table th{
-    padding: 10px;
-  }
-
-  table td{
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Form Header */
   .formTitle {
     color: #2c3e50;
     text-align: center;
@@ -47,9 +133,8 @@ body {
     margin: 0;
     padding-left: 20px;
   }
-  
-  /* Form Styles */
-  .review-form {
+ 
+  .Form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -78,7 +163,6 @@ body {
     margin-left: 20px;
   }
   
-
   #bookOpinion textarea,
   #title input,
   #author input,
@@ -103,7 +187,6 @@ body {
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
   }
   
-  /* Select Dropdown */
   .form-group select {
     appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
@@ -113,8 +196,8 @@ body {
     padding-right: 30px;
   }
   
-  /* Rating Input */
-  .form-group input[type="number"] {
+
+  #rating input {
     width: 60px;
   }
   
@@ -157,6 +240,17 @@ body {
     flex-direction: column;
   }
 
+
+  .BtnHome {
+    display: inline-block;
+    gap:10px;
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
 
   .homeDetails h1, .homeDetails h2 {
     color: #f5f5f5;
@@ -213,16 +307,7 @@ body {
   }
   
   /* Buttons */
-  .BtnHome {
-    display: inline-block;
-    gap:10px;
-    margin: 10px 10px 0 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
+  
   
   .BtnAll {
     background-color: #7e0078;
