@@ -7,6 +7,17 @@ head
   script(type='text/javascript' src='/js/scripts.js')
 
 body
+  header
+      nav.navbar
+        ul
+          li
+            a(href="/")
+              img.logo(src="/images/icon2.png", alt="our logo")
+          li
+              a(href="/review") All reviews 
+          li
+              a(href="/review/create") Add review
+
   .container
     h1 Reviews List
     a(href="/review/create") Create New Review

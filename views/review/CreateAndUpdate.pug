@@ -6,6 +6,17 @@ head
   link(rel='stylesheet' href='/css/styles.css')
   script(type='text/javascript' src='/js/scripts.js')
 body
+    header
+      nav.navbar
+        ul
+          li
+            a(href="/")
+              img.logo(src="/images/icon2.png", alt="our logo")
+          li
+              a(href="/review") All reviews 
+          li
+              a(href="/review/create") Add review
+
     .container
         - var formAction = review && review.id ? `/api/review/update/${review.id}` : '/api/review/create'
         - var formTitle = review && review.id ? 'Update review' : 'Create review'
