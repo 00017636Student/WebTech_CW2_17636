@@ -6,6 +6,40 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* CSS for navigation bar */
+.navbar {
+  background-color: rgb(149, 163, 210);
+  display: flex;
+  align-items: center;
+}
+  
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+  
+.navbar li a {
+  text-decoration: none;
+  color: #110600;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+  
+.navbar li a:hover {
+  color: #ffe253;
+}
+  
+.logo {
+  height: 50px;
+  vertical-align: middle;
+}
+
+header {
+  height: 60px;
+}
   
 
 /*Css for all reviews page */
@@ -101,229 +135,195 @@ body {
   color: #ddd;
 }
   
-  /* CSS for Create and Update */
+/* CSS for Create and Update */
 
-  .container {
-    max-width: 800px;
-    margin: 70px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+.container {
+  max-width: 800px;
+  margin: 70px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .formTitle {
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600;
-  }
+.formTitle {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
   
-  /* Error Messages */
-  .errorMessage {
-    background-color: #ffebee;
-    color: #c62828;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border-left: 4px solid #c62828;
-  }
+/* Error Messages */
+.errorMessage {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}
   
-  .errorList {
-    margin: 0;
-    padding-left: 20px;
-  }
+.errorList {
+  margin: 0;
+  padding-left: 20px;
+}
  
-  .Form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
   
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
   
-  .form-group label {
-    font-weight: 500;
-    color: #2c3e50;
-  }
+.formField label {
+  font-weight: 500;
+  color: #2c3e50;
+}
   
-  #bookOpinion textarea {
-    min-height: 100px;
-    overflow-y: hidden;
-    transition: height 0.2s ease;
-    resize:none;
-  }
+#bookOpinion textarea {
+  min-height: 100px;
+  overflow-y: hidden;
+  transition: height 0.2s ease;
+  resize:none;
+}
 
 
-  #genre select{
-    margin-left: 20px;
-  }
+#genre select{
+  margin-left: 20px;
+}
   
-  #bookOpinion textarea,
-  #title input,
-  #author input,
-  #review input,
-  #rating input,
-  #genre select {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-  }
+#bookOpinion textarea,
+#title input,
+#author input,
+#review input,
+#rating input,
+#genre select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
   
-  #bookOpinion textarea:focus,
-  #title input:focus,
-  #author input:focus,
-  #review input:focus,
-  #rating input:focus,
-  #genre select:focus {
-    border-color: #3498db;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-  }
+#bookOpinion textarea:focus,
+#title input:focus,
+#author input:focus,
+#review input:focus,
+#rating input:focus,
+#genre select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
   
-  .form-group select {
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 1em;
-    padding-right: 30px;
-  }
+.formField select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+  padding-right: 30px;
+}
   
 
-  #rating input {
-    width: 60px;
-  }
-  
-  /* Submit Button */
-  .BtnSubmit {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    align-self: flex-start;
-    margin-top: 10px;
-  }
-  
-  .BtnSubmit:hover {
-    background-color: #2980b9;
-  }
+#rating input {
+  width: 60px;
+}
 
-  header {
-    height: 60px;
-  }
+.BtnSubmit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+  margin-top: 10px;
+}
   
-  /* Home page */
-  .home {
-    position: relative;
-    background-image: url('/images/library.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 79vh;
-    padding: 50px;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.BtnSubmit:hover {
+  background-color: #2980b9;
+}
+
+  
+/* Home page */
+.home {
+  position: relative;
+  background-image: url('/images/library.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 79vh;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
-  .BtnHome {
-    display: inline-block;
-    gap:10px;
-    margin: 10px 10px 0 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
+.BtnHome {
+  display: inline-block;
+  gap:10px;
+  margin: 10px 10px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
 
-  .homeDetails h1, .homeDetails h2 {
-    color: #f5f5f5;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
+.homeDetails h1, .homeDetails h2 {
+  color: #f5f5f5;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
-  .homeDetails {
-    background: rgb(55, 90, 206);
-    text-align: center;
-    width: 60%;
-    padding: 20px;
-    font-size: 1.1em;
-  }
+.homeDetails {
+  background: rgb(55, 90, 206);
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  font-size: 1.1em;
+}
 
-  .navbar {
-    background-color: rgb(149, 163, 210);
-    display: flex;
-    align-items: center;
-  }
+
   
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
+h1 {
+  margin-top: 30px;
+  font-size: 2em;
+  color: #222;
+}
   
-  .navbar li a {
-    text-decoration: none;
-    color: #110600;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
+h2 {
+  margin: 15px 0;
+  font-weight: normal;
+  color: #555;
+}
   
-  .navbar li a:hover {
-    color: #ffe253;
-  }
-  
-  .logo {
-    height: 50px;
-    vertical-align: middle;
-  }
-  
-  h1 {
-    margin-top: 30px;
-    font-size: 2em;
-    color: #222;
-  }
-  
-  h2 {
-    margin: 15px 0;
-    font-weight: normal;
-    color: #555;
-  }
-  
-  /* Buttons */
-  
-  
-  .BtnAll {
-    background-color: #7e0078;
-    color: rgb(255, 255, 255);
-  }
-  
-  .BtnAll:hover {
-    background-color: #ff8bd2;
-  }
-  
-  .BtnNew {
-    background-color: #ffb56a;
-    color: white;
-  }
-  
-  .BtnNew:hover {
-    background-color: #fb9228;
-  }
+.BtnAll {
+  background-color: #7e0078;
+  color: rgb(255, 255, 255);
+}
+
+.BtnAll:hover {
+  background-color: #ff8bd2;
+}
+
+.BtnNew {
+  background-color: #ffb56a;
+  color: white;
+}
+
+.BtnNew:hover {
+  background-color: #fb9228;
+}
   
