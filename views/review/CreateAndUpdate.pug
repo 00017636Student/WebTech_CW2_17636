@@ -58,8 +58,8 @@ body
                         option(value="horror" selected=(sGenre === 'horror')) Horror
                         option(value="romance" selected=(sGenre === 'romance')) Romance
             .formField#rating
-                label(for="rating") How would you rate this book?
-                input(type="number", name="rating", id="rating", value=sRating, min="1" max="5" step="1")
+                label(for="rating") How would you rate this book on a 10-point scale?
+                input(type="number", name="rating", id="rating", value=sRating, min="1" max="10" step="1")
 
             .formField#bookOpinion
                 label(for="fullReview") What is your opinion about this book
