@@ -61,10 +61,41 @@ The project requires the following dependencies:
 
 # Project Structure
 
-Below is the basic structure of the project:
-
-17636/ │ ├── controllers/ # Handles requests│ ├── index.js # Main controller logic │ └── review.js # Review handling logic │ ├── data/ # Contains database files │ └── reviews_db.json # JSON database for reviews │ ├── public/ # Static assets like CSS, JS, images │ ├── styles/ # CSS stylesheets │ └── scripts/ # Client-side JS scripts │ ├── views/ # Templating files (Pug, EJS, etc.) │ ├── layout.pug # Main layout file │ └── index.pug # Home page template │ ├── node_modules/ # Installed npm packages │ ├── package.json # Project metadata and dependencies ├── package-lock.json # Locked dependency versions ├── app.js # Main entry point for the application └── README.md # Project documentation
-
+```
+17636/                           # Root folder
+├── 📁controllers/              # Controller logic folder
+│   └── 📄review.js
+├── 📁data/                     # Database
+│   └── 📄reviews_db.json
+├── 📁public/                   # Public folder for UI essential files
+│   ├── 📁css/
+│   │   └── 📄styles.css          
+│   ├── 📁js/
+│   │   └── 📄scripts.js         
+│   └── 📁images/
+├── 📁routes/                   # Folder which keep controllers for specific route groups 
+│   ├── 📁api/
+│   │   ├──  📄index.js       
+│   │   └──  📄review.js    
+│   └── 📁web/
+│       ├──  📄index.js       
+│       └──  📄review.js       
+├── 📁services/                 # Folder with service layer logic
+│   └── 📄review.js
+├── 📁validators/               # Folder with user input validation rules
+│   └── 📄review.js
+├── 📁views/                    #Folder with UI logic 
+│   ├── 📁review/
+│   │    ├── 📄all.pug       
+│   │    └── 📄CreateAndUpdate         
+│   └── 📄index.pug     
+├── 📁.gitignore/
+├── 📄app.js                     # Main entry point            
+├── 📄LICENSE                    # License file for the project              
+├── 📄package-lock.json              
+├── 📄package.json               
+└── 📄README.md                      
+```
 
 ## External links
 - https://github.com/00017636Student/WebTech_CW2_17636 My GitHub public repository
