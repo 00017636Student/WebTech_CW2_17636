@@ -66,7 +66,7 @@ Below is the basic structure of the project:
 |----------|----------|
 |/17636 | Root folder |
 | /controllers | Handle requests |
-|  /review.js | 
+   /review.js | 
 | /data | Database |
 |  /reviews_db.json.js | 
 
