@@ -41,7 +41,7 @@ Before you start, make sure you have the following installed:
 3. **Start the Application**
 
    - After the installation is complete, run the following command to start the server:
-     npm run dev
+     npm start
 
 4. **Access the Application**
 
