@@ -30,7 +30,7 @@ Before you start, make sure you have the following installed:
 
    - **Option 1**: Download the `17636` folder and open it in VS Code.
    - **Option 2**: Clone the repository using Git:
-     git clone https://github.com/00017636Student/WebTech_CW2_17636
+     git clone https://github.com/00017636Student/WebTech_CW2_17636.git
    - Open the project folder in your VS Code.
 
 2. **Install Project Dependencies**
