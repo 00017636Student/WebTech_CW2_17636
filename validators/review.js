@@ -9,6 +9,8 @@ return [
     .notEmpty().withMessage('Please fill out author field'),
     body('genre')
     .notEmpty().withMessage('Please fill out genre field'),
+    body('rating')
+    .notEmpty().withMessage('Please rate the book'),
     body('fullReview')
     .notEmpty().withMessage('Please fill out review field'),
     ];
