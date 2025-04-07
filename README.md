@@ -7,13 +7,13 @@ This is the project for my cw2 Web technology module
 
  ## Features
  In this application you can do multiple things like:
- -Navigating through the website with navigation bar which is located on the top left corner. By doing so you can go to home page by clicking book icon or go to All reviews or Add review pages.
- -Moreover, from the home page you also can go to the All reviews and Add review pages
- -You can create a new review and put all the relevant information like book's title, genre, author, how you would rate this book and write your overall opinion about it
- -All the created reviews are showed in All reviews page
- -You can edit them and change the information to more relevant or fully delete a review
- -However, before deleting there will be a confirmation message which you need to whether cancel or confirm
- -If the review text will be too long you should not worry because the textarea in form will grow and the card which holds the information, too
+ - Navigating through the website with navigation bar which is located on the top left corner. By doing so you can go to home page by clicking book icon or go to All reviews or Add review pages.
+ - Moreover, from the home page you also can go to the All reviews and Add review pages
+ - You can create a new review and put all the relevant information like book's title, genre, author, how you would rate this book and write your overall opinion about it
+ - All the created reviews are showed in All reviews page
+ - You can edit them and change the information to more relevant or fully delete a review
+ - However, before deleting there will be a confirmation message which you need to whether cancel or confirm
+ - If the review text will be too long you should not worry because the textarea in form will grow and the card which holds the information, too
 
  # Project Setup Guide
 
