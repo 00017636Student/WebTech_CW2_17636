@@ -1,62 +1,32 @@
 [
     {
-        "id": "hKTj",
+        "id": "ExIH6S",
         "review": {
-            "title": "vyvuu",
-            "author": "Пушкин",
-            "genre": "romance",
-            "rating": "3",
-            "fullReview": "esvef"
+            "title": "Asya",
+            "author": "Turgenev",
+            "genre": "adventure",
+            "rating": "5",
+            "fullReview": "very interesting"
         }
     },
     {
-        "id": "sklK",
+        "id": "pJ8on3",
         "review": {
-            "title": "Wi-Fi 6 Router Tp-link Archer AX72",
-            "author": "esfsf",
-            "genre": "history",
+            "title": "ascasca",
+            "author": "csacascas",
+            "genre": "sci-fi",
             "rating": "2",
-            "fullReview": "tbrtebertb"
+            "fullReview": "ewevcwev"
         }
     },
     {
-        "id": "Wc5V",
+        "id": "4y5Gho",
         "review": {
-            "title": "ees",
-            "author": "esef",
-            "genre": "fantasy",
-            "rating": "2",
-            "fullReview": "fjiowjenviofniovnweoivioeeeeeeeeeeeeeeeeee"
-        }
-    },
-    {
-        "id": "XV0c",
-        "review": {
-            "title": "ecwve",
-            "author": "vewevwev",
+            "title": "wqwq",
+            "author": "esfsefesf",
             "genre": "detective",
-            "rating": "3",
-            "fullReview": "iwfniawnfinawfiiawofnioawfnuiwafbuawbfuiwfbawufbuiwabfuiwbafiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu waeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        }
-    },
-    {
-        "id": "yAi8",
-        "review": {
-            "title": "ewfwfe",
-            "author": "efwefwe",
-            "genre": "detective",
-            "rating": "4",
-            "fullReview": "wevev"
-        }
-    },
-    {
-        "id": "MbK8",
-        "review": {
-            "title": "fwefwef",
-            "author": "wefwefw",
-            "genre": "detective",
-            "rating": "3",
-            "fullReview": "wffwfwef"
+            "rating": "10",
+            "fullReview": "dwqdwqd"
         }
     }
 ]

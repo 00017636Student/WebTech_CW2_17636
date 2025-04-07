@@ -1,4 +1,5 @@
-const { body } = require('express-validator');
+const { body } = require('express-validator'); 
+//This function creates validation for text fields in creating and updating a review so they will not be empty
 const reviewValidation = () => { 
 
 return [

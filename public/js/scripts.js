@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { //This function sends confirmation message before deleting
     const deleteButtons = document.querySelectorAll(".BtnDelete");
   
     deleteButtons.forEach((button) => {
@@ -14,17 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 )})})
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { //This is a function for auto-resizing textarea in form field for full review about book if the text will be too long
   const textarea = document.querySelector('#bookOpinion textarea');
   
   if (textarea) {
-    // Auto-resize on input
     textarea.addEventListener('input', function() {
       this.style.height = 'auto';
       this.style.height = (this.scrollHeight) + 'px';
     });
 
-    // Trigger initial resize
     textarea.dispatchEvent(new Event('input'));
   }
 });

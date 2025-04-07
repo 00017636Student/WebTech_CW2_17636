@@ -8,20 +8,18 @@ const app = express();
 
 global.mock_db = path.join(__dirname, './data/reviews_db.json');
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.use('/css', express.static('public/css'));
+app.use('/css', express.static('public/css')); 
 app.use('/js', express.static('public/js'));
 app.use('/images', express.static('public/images'));
 
 app.use('/api', apiRoutes);
 app.use('/', webRoutes);
-
 
 app.listen(port, () => {
 console.log(`Server running at http://localhost:${port}/`);
