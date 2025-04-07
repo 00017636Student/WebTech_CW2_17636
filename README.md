@@ -43,6 +43,9 @@ Before you start, make sure you have the following installed:
    - After the installation is complete, run the following command to start the server:
      npm start
 
+   - or for local development:
+    npm run dev
+
 4. **Access the Application**
 
    - Once the server starts, open your browser and go to:
@@ -97,6 +100,6 @@ The project requires the following dependencies:
 └── 📄README.md                      
 ```
 
-## External links
+## Links
 - https://github.com/00017636Student/WebTech_CW2_17636 My GitHub public repository
-- link to my hosted on Glitch application
+- https://bookreview-905l.onrender.com/  Link to my application hosted on Render 
