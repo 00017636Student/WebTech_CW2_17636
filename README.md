@@ -62,13 +62,8 @@ The project requires the following dependencies:
 # Project Structure
 
 Below is the basic structure of the project:
-| Folder/files | Description |
-|----------|----------|
-|/17636 | Root folder |
-| /controllers | Handle requests |
-   /review.js | 
-| /data | Database |
-|  /reviews_db.json.js | 
+
+17636/ │ ├── controllers/ # Handles requests│ ├── index.js # Main controller logic │ └── review.js # Review handling logic │ ├── data/ # Contains database files │ └── reviews_db.json # JSON database for reviews │ ├── public/ # Static assets like CSS, JS, images │ ├── styles/ # CSS stylesheets │ └── scripts/ # Client-side JS scripts │ ├── views/ # Templating files (Pug, EJS, etc.) │ ├── layout.pug # Main layout file │ └── index.pug # Home page template │ ├── node_modules/ # Installed npm packages │ ├── package.json # Project metadata and dependencies ├── package-lock.json # Locked dependency versions ├── app.js # Main entry point for the application └── README.md # Project documentation
 
 
 ## External links
