@@ -2,7 +2,7 @@
   "name": "17636",
   "version": "1.0.0",
   "description": "This is the project for my cw2 Web technology module",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
