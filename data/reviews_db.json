@@ -4,49 +4,9 @@
         "review": {
             "title": "Asya",
             "author": "Turgenev",
-            "genre": "adventure",
-            "rating": "5",
+            "genre": "novel",
+            "rating": "10",
             "fullReview": "very interesting"
-        }
-    },
-    {
-        "id": "pJ8on3",
-        "review": {
-            "title": "ascasca",
-            "author": "csacascas",
-            "genre": "sci-fi",
-            "rating": "3",
-            "fullReview": "ewvwef"
-        }
-    },
-    {
-        "id": "4y5Gho",
-        "review": {
-            "title": "wqwq",
-            "author": "esfsefesf",
-            "genre": "detective",
-            "rating": "9",
-            "fullReview": "dwqdwqd"
-        }
-    },
-    {
-        "id": "f0E7m2",
-        "review": {
-            "title": "erberb",
-            "author": "reberb",
-            "genre": "detective",
-            "rating": "1",
-            "fullReview": "reberbesfsefs"
-        }
-    },
-    {
-        "id": "Ib6nCC",
-        "review": {
-            "title": "bdffbdb",
-            "author": "dfbdbdfb",
-            "genre": "detective",
-            "rating": "9",
-            "fullReview": "esfwsf"
         }
     }
 ]

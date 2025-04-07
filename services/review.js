@@ -4,7 +4,7 @@ const path = require('path');
 if (!global.reviews_db) {
     global.reviews_db = path.join(__dirname, '../data', 'reviews_db.json');
 }
-const reviews = require(global.reviews_db); //Access global reviews database file
+const reviews = require(global.reviews_db); 
 
 const reviewService = {
     // Get all reviews

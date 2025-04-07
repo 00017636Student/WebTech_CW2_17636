@@ -68,17 +68,19 @@ header {
 .center a {
   text-decoration: none;
   color: #fff; 
-  background-color: #9e25fb; 
+  background-color: rgb(55, 90, 206); 
   padding: 10px 15px; 
   border-radius: 5px; 
   display: inline-block; 
   font-size: 14px;
   text-align: center; 
-  width: 200px; 
+  width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .center a:hover {
-  background-color: #7e0078;
+  background-color: #70c19b;
 }
 
 .reviewsList {
@@ -116,17 +118,19 @@ header {
 .BtnDelete {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background-color: #fb2525; 
+  background-color: #7e0078; 
   padding: 5px 10px; 
   border-radius: 5px; 
   display: inline-block; 
   font-size: 14px;
   text-align: center; 
-  width: 50px; 
+  width: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .BtnDelete:hover{
-  background-color: #6f6f6f;
+  background-color: #fc5959;
   color: #ffffff;
 }
 
@@ -139,7 +143,9 @@ header {
   display: inline-block; 
   font-size: 14px;
   text-align: center; 
-  width: 50px; 
+  width: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .BtnUpdate:hover{
@@ -148,7 +154,6 @@ header {
 }
   
 /* CSS for Create and Update */
-
 .container {
   max-width: 800px;
   margin: 70px auto;
@@ -250,13 +255,15 @@ header {
   background-color: #3498db;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 40px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
   align-self: flex-start;
   margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
   
 .BtnSubmit:hover {
@@ -310,6 +317,8 @@ header {
 .BtnAll {
   background-color: #7e0078;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .BtnAll:hover {
@@ -318,6 +327,8 @@ header {
 
 .BtnNew {
   background-color: #ffb56a;
+  cursor: pointer;
+  transition: background-color 0.3s;
   color: white;
 }
 
